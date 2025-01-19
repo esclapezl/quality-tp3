@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Arial';
+}
+
+header {
+    height: 70vh;
+}
+
+nav li {
+    font-size: 20px !important;
+}
+
+.home--header-title {
+    color: #0a78b3 !important;
+}
+
+#tarifs-conditions {
+    margin-top: 840px;
+}
+
+#tarifs-pricing {
+    top: 600px;
+    padding-left: 20%;
+    padding-right: 20%;
+    width: 100%;
+    position: absolute;
+}
+
+#tarifs-pricing .col-4:hover {
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease;
+}
+
+@keyframes zoom-in-zoom-out {
+    100% {
+      transform: scale(1.1, 1.1);
+    }
+}
+
+#tarifs-services div {
+    text-align: center;
+} 
+
+#tarifs li, #tarifs-pricing li {
+    background: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+}
+
+#tarifs img, #tarifs-pricing img {
+    width: 150px !important;
+    display: block;
+    margin: 0 auto;
+}
+
+#tarifs a, #tarifs-pricing a {
+    background: #0a78b3 !important;
+    border: 1px solid #0a78b3 !important;
+    border-radius: 20px;
+}
