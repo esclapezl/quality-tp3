@@ -8,7 +8,7 @@ const Admin = class {
   }
 
   run() {
-    axios.get('http://35.180.210.224:81/contacts', {
+    axios.get('http://127.0.0.1:3000/contacts', {
       headers: {
         authorization: localStorage.getItem('token')
       }
@@ -74,7 +74,7 @@ const Admin = class {
   }
 
   onClickDelete(id) {
-    axios.delete(`http://35.180.210.224:81/contact/${id}`).then(() => {
+    axios.delete(`http://127.0.0.1:3000/contact/${id}`).then(() => {
       window.location = '/admin';
     });
   }

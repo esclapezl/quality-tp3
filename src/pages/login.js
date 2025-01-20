@@ -18,7 +18,7 @@ const Login = class {
 
       const dataForm = JSON.parse(JSON.stringify(Object.fromEntries(new FormData(formEl))));
 
-      axios.get(`http://35.180.210.224:81/login?login=${dataForm.name}&password=${dataForm.password}`)
+      axios.get(`http://127.0.0.1:3000/login?login=${dataForm.name}&password=${dataForm.password}`)
         .then((response) => {
           const { token } = response.data;
           localStorage.setItem('token', token);

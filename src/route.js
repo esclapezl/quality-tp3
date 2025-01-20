@@ -14,7 +14,7 @@ const Route = class {
     if (window.location.pathname === this.route && !this.priv) {
       const token = localStorage.getItem('token');
 
-      axios.get('http://35.180.210.224:81/auth', {
+      axios.get('http://127.0.0.1:3000/auth', {
         headers: {
           authorization: token
         }

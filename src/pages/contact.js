@@ -103,7 +103,7 @@ const Contact = class {
     formEl.addEventListener('submit', () => {
       const dataForm = new FormData(formEl);
 
-      axios.post('http://35.180.210.224:81/contact', JSON.parse(JSON.stringify(Object.fromEntries(dataForm))));
+      axios.post('http://127.0.0.1:3000/contact', JSON.parse(JSON.stringify(Object.fromEntries(dataForm))));
     });
   }
 
